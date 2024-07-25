@@ -1,0 +1,6 @@
+ul{
+   margin: 0px 20px;
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
