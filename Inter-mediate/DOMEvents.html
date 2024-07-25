@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="DOMEvents.js"></script>
+        <!-- Events will change the HTML Elements -->
+     <!-- <p onclick="this.innerHTML = 'What are you Doing now?'">Hey, How are you</p>
+  <h6 onclick="myFun (this)">Hello, World!</h6>
+  <script>
+    function myFun (id){
+        id.innerHTML = "What are you Doing now!"; 
+    }  -->
+    Enter your name: <input type="text" id="fname" oninput="upperCase()">
+    <p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+    
+    <script>
+    function upperCase() {
+      const x = document.getElementById("fname");
+      x.value = x.value.toUpperCase();
+    }
+    </script> 
+</body>
+</html>

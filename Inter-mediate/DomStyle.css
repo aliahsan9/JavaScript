@@ -1,0 +1,11 @@
+ body{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 25px;
+    gap: 30px;
+    background-color: cyan;
+}

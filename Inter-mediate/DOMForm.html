@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Validation</h1>
+    <p>Please input a number between 1 and 10:</p>
+    <input id="num" type="number">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+    <script src="DOMForm.js"></script>
+    <script>
+        function myFunction(){
+            let x = document.getElementById("num").value;
+            if(x > 1 && x < 10){
+                console.log("Your Input is Valid.");
+                document.getElementById("demo").innerHTML = "Your Input is Valid.";
+            } else {
+                console.log("Your Input is Invalid!");
+                document.getElementById("demo").innerHTML = "Your Input is Invalid!";
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, World!</p>
+    <p>Hello, World! How are you?</p>
+    <p>Hello, World! Whatt are you Doing now!</p>
+    <p id="demo"></p>
+    <script>
+        const myCollection = document.getElementsByTagName("p");
+        for (let i=0;i<myCollection.length;i++){
+            myCollection[3].style.color = "red";
+        }
+        document.getElementById("demo").innerHTML = "This page contains "+ myCollection.length+"p";
+    </script>
+</body>
+</html>

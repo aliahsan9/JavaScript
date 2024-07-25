@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="DomFindElements.js"></script>
+    <!-- First We will get element by id -->
+    <p id="hello"></p>
+    <script>
+        document.getElementById("hello").innerHTML = "hello world, how are you?";
+    </script>
+     <!-- Now we will get element by tag name -->
+     <p id="demo"></p>
+
+     <script>
+     const name1 = document.getElementsByTagName("p")[0].innerHTML = "hello world!";
+     
+     </script>
+     
+     <!-- Now we will get element by CSS Selectors-->
+     <p id="demo"></p>
+<p class="intro">Lorem ipsum dolor sit amusdam, expedita nobis, vitae numquam tempore provident eos eum culpa!</p>
+     <script>
+     const name2 = document.getElementsByTagName("p");
+     document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+     document.querySelectorAll("p.intro");
+     </script>
+    
+    <!-- Now we will find all html elements using objects -->
+<a>button</a>
+    <p id="intro2">hello world</p>
+    <script>
+        document.anchors(a);
+    </script>
+
+</body>
+
+</html>
